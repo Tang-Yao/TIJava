@@ -28,5 +28,16 @@ public class BufferToText {
 		fc.close();
 		
 		fc = new FileInputStream("data2.txt").getChannel();
+		buff.clear();
+		fc.read(buff);
+		buff.flip();
+		System.out.println(buff.asCharBuffer());
+		fc.write(buff);
+		fc.close();
+		fc = new FileInputStream("data2.txt").getChannel();
+		buff.clear();
+		fc.read(buff);
+		buff.flip();
+		System.out.println(buff.asCharBuffer());
 	}
 }
