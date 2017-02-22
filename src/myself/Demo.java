@@ -6,11 +6,14 @@ package myself;
 public class Demo {
     public static void main(String[] args) {
         int sum = 0;
-        for (int i  =0; i < 9; i++)
+        for (int i  =0; i < 9; i++) {
             if (i == 3){
                 sum = 0;
-            }
-        System.out.println("Hello world");
+            } else
+            	sum = sum + i;
+        }
         System.out.println("Demo");
+        System.out.println(sum);
+        System.out.println("Hello world");
     }
 }
