@@ -8,9 +8,9 @@ public class Demo {
         int i = 1;
         for (int j = 0; j < 1000; j++) {
             i = i++;
-            System.out.print(i + " ");
+            //System.out.print(i + " ");
         }
-        System.out.println();
+        //System.out.println();
         System.out.println(i);
     }
 }
